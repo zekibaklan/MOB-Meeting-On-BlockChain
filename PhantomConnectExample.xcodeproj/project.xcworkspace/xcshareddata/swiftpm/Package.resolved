@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Beet",
+        "repositoryURL": "https://github.com/metaplex-foundation/beet-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "e4708bf28b55ce42727006c1cb7882f069d07bd8",
+          "version": "1.0.7"
+        }
+      },
+      {
+        "package": "secp256k1",
+        "repositoryURL": "https://github.com/Boilertalk/secp256k1.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "cd187c632fb812fd93711a9f7e644adb7e5f97f0",
+          "version": "0.1.7"
+        }
+      },
+      {
+        "package": "Solana",
+        "repositoryURL": "https://github.com/ajamaica/Solana.Swift.git",
+        "state": {
+          "branch": "master",
+          "revision": "bc2e7e5d6943084f3e3adb88a9150c24c864063f",
+          "version": null
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
+          "version": "4.0.6"
+        }
+      },
+      {
+        "package": "TweetNacl",
+        "repositoryURL": "https://github.com/bitmark-inc/tweetnacl-swiftwrap.git",
+        "state": {
+          "branch": null,
+          "revision": "f8fd111642bf2336b11ef9ea828510693106e954",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
