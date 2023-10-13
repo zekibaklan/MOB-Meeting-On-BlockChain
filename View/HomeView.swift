@@ -1,6 +1,11 @@
 import SwiftUI
 import Solana
 import PhantomConnect
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+// ...
+      
 
 struct HomeView: View {
     
@@ -41,6 +46,8 @@ struct HomeView: View {
                     self.phantomEncryptionKey = phantomEncryptionPublicKey
                     self.session = session
                     walletConnected.toggle()
+                    
+                   
                 }
             }
         }

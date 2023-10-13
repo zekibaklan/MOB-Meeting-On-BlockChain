@@ -9,8 +9,26 @@ import SwiftUI
 
 struct ImageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+                
+            Image("nextevent")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 100)
+                .foregroundColor(Color("Colorpurple"))
+                .shadow(color: Color("Solanagreen"), radius: 5)
+            Text("Account 1")
+                .font(.system(.callout, design: .rounded))
+                .fontWeight(.heavy)
+                .foregroundColor(Color("Colorpurple"))
+
+
+            
+          
+     }
+        
     }
+     
 }
 
 #Preview {

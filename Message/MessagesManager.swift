@@ -12,7 +12,7 @@ import SwiftUI
 
 
 class MessagesManager : ObservableObject {
-        @Published var randomNumber = "1234"
+        @Published var randomNumber = "98765"
         @Published private(set) var messages: [Message] = []
         @Published private(set) var lastMessageId = ""
     

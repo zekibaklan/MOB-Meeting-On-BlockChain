@@ -12,14 +12,30 @@ struct EventView: View {
     @StateObject var messagesManager = MessagesManager()
     @Binding var walletPublicKey: PublicKey?
     
+    
     var body: some View {
         
             VStack {
             
                 VStack {
                     
-                    ImageView()
-                    ScrollViewReader { proxy in 
+                  
+                    HStack {
+                        Text("RC : 12345")
+                           
+                        VStack {
+                            ImageView()
+                            Text("Event Title")
+                            
+                        }
+                    
+                        
+                        Text("ID:\(walletPublicKey?.base58EncodedString ?? "933X")****".prefix(7))
+                            
+                    }
+                    .font(.footnote)
+                    
+                    ScrollViewReader { proxy in
                         ScrollView {
                             ForEach(messagesManager.messages, id: \.id) {
                                 message in

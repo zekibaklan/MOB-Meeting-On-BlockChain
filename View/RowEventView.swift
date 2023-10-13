@@ -13,12 +13,16 @@ struct RowEventView: View {
    
     
     private var nextEvent = [
-        "nextevent",
-        "nextevent",
-        "nextevent",
-        "nextevent",
-        "nextevent",
-        "nextevent"
+        
+        "nft3",
+        "nft3",
+        "nft3",
+        "nft3",
+        "nft3",
+        "nft3",
+        "nft3"
+      
+       
     ]
     
     
@@ -59,7 +63,7 @@ struct RowEventView: View {
 }
 }
 
-struct RowListView_Previews: PreviewProvider {
+struct RowEventView_Previews: PreviewProvider {
     static var previews: some View {
         RowEventView()
             .previewLayout(.sizeThatFits)

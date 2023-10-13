@@ -9,6 +9,8 @@ import SwiftUI
 import PhantomConnect
 import Solana
 struct ProfileView: View {
+    @StateObject private var messagesManager = MessagesManager()
+
     @ObservedObject var viewModel: PhantomConnectViewModel
     @Binding var walletConnected: Bool
     @Binding var walletPublicKey: PublicKey?
@@ -16,90 +18,58 @@ struct ProfileView: View {
     @Binding var session: String?
     @Binding var transactionSignature: String?
     var body: some View {
-        ZStack {
-            Spacer()
-           
-            CustomCardView()
-                .ignoresSafeArea(.all)
+        NavigationView {
+            ZStack {
                 
+                
+                Color("Colorblack")
+                    .ignoresSafeArea(.all, edges: .all)
+                
+                
+                VStack(spacing: 10) {
+                    
+                    
+                    Group {
+                        
+                        ImageView()
+                        
+                        
+                        
+                        
+                        
+                    }
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(1)
+                    
+                    
+                    RowEventView()
+                    RowNFTView()
+                    
+                    
+                    Spacer()
+                    HStack(alignment: .center ,spacing: 5) {
+                        Spacer()
+                        
+                        
+                        RoomCodeButtonView(walletPublicKey: $walletPublicKey)
+                        Spacer()
+                        NavigationLink(destination: FormView(walletPublicKey: $walletPublicKey).environmentObject(messagesManager)) { Text("Create Room")
+                                .modifier(ButtonModifier())
+}
+    
+                    }
+                    
+                    
+                    
+                    
+                }
+                .padding(.top)
+                
+            } //: VSTACK
             
-            VStack(spacing: 24) {
-                
-                
-                Group {
-                    Text("CONNECT SUCCESS!")
-                        .modifier(TitleModifier())
-                    
-                        .modifier(KeysModifier(keysname: "Wallet Public Key:", publicKeys: walletPublicKey?.base58EncodedString ?? "--"))
-                        
-                        
-                        .modifier(KeysModifier(keysname: "Transaction Signature:", publicKeys: transactionSignature ?? "--"))
-                }
-                .multilineTextAlignment(.leading)
-                .lineLimit(1)
-                
-                
-                Spacer(minLength: 200)
-                HStack(alignment: .center ,spacing: 5) {
-                    Spacer()
-                    Button {
-                        
-                        createTransaction { serializedTransaction in
-                            
-                            try? viewModel.sendAndSignTransaction(
-                                serializedTransaction: serializedTransaction,
-                                dappEncryptionKey: viewModel.linkingKeypair?.publicKey,
-                                phantomEncryptionKey: phantomEncryptionKey,
-                                session: session,
-                                dappSecretKey: viewModel.linkingKeypair?.secretKey
-                            )
-                            
-                        }
-                        
-                    } label: {
-                        
-                        Text("Send Transaction")
-                            .modifier(ButtonModifier())
-                        
-                    }
-                    .onWalletTransaction(
-                        phantomEncryptionPublicKey: phantomEncryptionKey,
-                        dappEncryptionSecretKey: viewModel.linkingKeypair?.secretKey
-                    ) { signature, _ in
-                        
-                        transactionSignature = signature
-                        
-                    }
-                    Spacer()
-                    Button {
-                        
-                        try? viewModel.disconnectWallet(
-                            dappEncryptionKey: viewModel.linkingKeypair?.publicKey,
-                            phantomEncryptionKey: phantomEncryptionKey,
-                            session: session,
-                            dappSecretKey: viewModel.linkingKeypair?.secretKey
-                        )
-                        
-                    } label: {
-                        
-                        Text("Disconnect")
-                            .modifier(ButtonModifier())
-                                                    
-                    }
-                    
-                    .onWalletDisconnect { error in
-                        
-                        walletConnected.toggle()
-                        
-                    }
-                    Spacer()
-                    
-                }
-                
-            }
+            
             
         }
-        
     }
     
     func createTransaction(completion: @escaping ((_ serializedTransaction: String) -> Void)) {
@@ -141,5 +111,6 @@ struct ProfileView: View {
         walletPublicKey: .constant(nil),
         phantomEncryptionKey: .constant(nil),
         session: .constant(nil), transactionSignature: .constant(nil)
+        
     )
 }

@@ -9,7 +9,17 @@ import SwiftUI
 
 struct isSelected: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      
+                ZStack {
+                    Circle()
+                        .fill(Color("Solanagreen"))
+                        .frame(width: 30, height: 30)
+                    
+                    Image(systemName: "checkmark")
+                        .foregroundColor(.white)
+                        .font(.system(size: 20, weight: .bold))
+                }
+            
     }
 }
 

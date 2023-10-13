@@ -27,8 +27,9 @@ struct MessageBubble: View {
             if showtTime {
                 HStack {
                   
-                    Text("\(walletPublicKey?.base58EncodedString ?? "933X")****".prefix(4))
+                    Text("\(walletPublicKey?.base58EncodedString ?? "933X")".prefix(4))
                         .foregroundStyle(.gray)
+                        .font(.caption2)
                         .padding(.horizontal,5)
                         .padding(.trailing,50)
                     Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
@@ -40,7 +41,8 @@ struct MessageBubble: View {
             }
         }) //: VSTACK
         .frame(maxWidth: .infinity, alignment: .center)
-        .padding()
+        .padding(.bottom,10)
+        .padding(.top,5)
         .padding(.horizontal,10)
         
         
