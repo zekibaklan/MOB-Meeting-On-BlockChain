@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 @main
-struct PhantomConnectExampleApp: App {
+struct MOB: App {
    
     init() {
         FirebaseApp.configure()

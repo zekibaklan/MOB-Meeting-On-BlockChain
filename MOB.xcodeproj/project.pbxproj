@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50B61A7F2878796B0030CC83 /* PhantomConnectExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B61A7E2878796B0030CC83 /* PhantomConnectExampleApp.swift */; };
+		50B61A7F2878796B0030CC83 /* MOB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B61A7E2878796B0030CC83 /* MOB.swift */; };
 		50B61A812878796B0030CC83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B61A802878796B0030CC83 /* ContentView.swift */; };
 		50B61A832878796C0030CC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B61A822878796C0030CC83 /* Assets.xcassets */; };
 		50B61A862878796C0030CC83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B61A852878796C0030CC83 /* Preview Assets.xcassets */; };
@@ -46,7 +46,6 @@
 		5B273D402AD192AF00BF3AC3 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B273D3F2AD192AF00BF3AC3 /* FirebaseRemoteConfigSwift */; };
 		5B273D422AD192AF00BF3AC3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B273D412AD192AF00BF3AC3 /* FirebaseStorage */; };
 		5B273D442AD192AF00BF3AC3 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5B273D432AD192AF00BF3AC3 /* FirebaseStorageCombine-Community */; };
-		5B273D462AD1933200BF3AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B273D452AD1933200BF3AC3 /* AppDelegate.swift */; };
 		5B273D4F2AD1A2E700BF3AC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B273D4E2AD1A2E700BF3AC3 /* GoogleService-Info.plist */; };
 		5B273D512AD1A52100BF3AC3 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B273D502AD1A52100BF3AC3 /* FormView.swift */; };
 		5B29B6892AD2018E00C25832 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29B6882AD2018E00C25832 /* MessageBubble.swift */; };
@@ -65,7 +64,7 @@
 
 /* Begin PBXFileReference section */
 		50B61A7B2878796B0030CC83 /* PhantomConnectExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhantomConnectExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B61A7E2878796B0030CC83 /* PhantomConnectExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhantomConnectExampleApp.swift; sourceTree = "<group>"; };
+		50B61A7E2878796B0030CC83 /* MOB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOB.swift; sourceTree = "<group>"; };
 		50B61A802878796B0030CC83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50B61A822878796C0030CC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B61A852878796C0030CC83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -78,7 +77,6 @@
 		5B273D062AD0AD2500BF3AC3 /* RowEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowEventView.swift; sourceTree = "<group>"; };
 		5B273D082AD0B9CD00BF3AC3 /* RowNFTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowNFTView.swift; sourceTree = "<group>"; };
 		5B273D0A2AD18D8400BF3AC3 /* RoomCodeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCodeButtonView.swift; sourceTree = "<group>"; };
-		5B273D452AD1933200BF3AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B273D4E2AD1A2E700BF3AC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B273D502AD1A52100BF3AC3 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		5B29B6882AD2018E00C25832 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
@@ -142,7 +140,7 @@
 				5B29B68A2AD202CE00C25832 /* Message */,
 				5BE10D302AD21446007AB49A /* Components */,
 				5BC614A22ACF69BD001B4FF5 /* Modifier */,
-				50B61A7D2878796B0030CC83 /* PhantomConnectExample */,
+				50B61A7D2878796B0030CC83 /* MOB */,
 				5B3ED1352ACF62CA0078E870 /* View */,
 				50B61A8E28787A130030CC83 /* Packages */,
 				50B61A7C2878796B0030CC83 /* Products */,
@@ -158,16 +156,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50B61A7D2878796B0030CC83 /* PhantomConnectExample */ = {
+		50B61A7D2878796B0030CC83 /* MOB */ = {
 			isa = PBXGroup;
 			children = (
-				5B273D452AD1933200BF3AC3 /* AppDelegate.swift */,
-				50B61A7E2878796B0030CC83 /* PhantomConnectExampleApp.swift */,
+				50B61A7E2878796B0030CC83 /* MOB.swift */,
 				5B273D4E2AD1A2E700BF3AC3 /* GoogleService-Info.plist */,
 				50B61A9528787C890030CC83 /* Info.plist */,
 				50B61A842878796C0030CC83 /* Preview Content */,
 			);
-			path = PhantomConnectExample;
+			path = MOB;
 			sourceTree = "<group>";
 		};
 		50B61A842878796C0030CC83 /* Preview Content */ = {
@@ -359,13 +356,12 @@
 				5BC614A82ACF7733001B4FF5 /* TitleModifier.swift in Sources */,
 				5B273D0B2AD18D8400BF3AC3 /* RoomCodeButtonView.swift in Sources */,
 				5BC6149E2ACF6578001B4FF5 /* ProfileView.swift in Sources */,
-				5B273D462AD1933200BF3AC3 /* AppDelegate.swift in Sources */,
 				5B8EDDA32AD209B0007342DF /* EventView.swift in Sources */,
 				5B24E2F92AD4121D006ADA32 /* FirestoreModel.swift in Sources */,
 				5BC6149C2ACF63B7001B4FF5 /* HomeView.swift in Sources */,
 				50B61A812878796B0030CC83 /* ContentView.swift in Sources */,
 				5B29B6892AD2018E00C25832 /* MessageBubble.swift in Sources */,
-				50B61A7F2878796B0030CC83 /* PhantomConnectExampleApp.swift in Sources */,
+				50B61A7F2878796B0030CC83 /* MOB.swift in Sources */,
 				5BE10D322AD214AE007AB49A /* MessageField.swift in Sources */,
 				5B273D032AD090B000BF3AC3 /* ImageView.swift in Sources */,
 				5B273D072AD0AD2500BF3AC3 /* RowEventView.swift in Sources */,
