@@ -15,6 +15,7 @@ struct CustomCardView: View {
         Color("Colorblack")
           .cornerRadius(40)
           .offset(y: 12)
+          .opacity(0.9)
         
         // MARK: - 2. LIGHT
         
